@@ -3,18 +3,6 @@ def setup():
     size(750, 500)
     background(225, 200, 100, 127)
     
-    #sets variable as False to see if the letter guessed exists at all in the word
-    letterInWord = False
-    #creates a list for the blanks in the words
-    wordList = []
-    #sets the wrong guesses variable
-    wrongGuesses = 0
-    #list of possible words to guess
-    possibleWords = ["salem", "nymph", "boston", "stocks", "pentagram", "occult", "devil", "witchcraft", "rituals"]
-    #picks a random number for list
-    word = random.randint(0,8)
-
-    
 
 def draw():
     #stroke(20)
@@ -32,10 +20,23 @@ def draw():
         rect(100, 100, 550, 550)
         delay(100)
         
+        
+        #sets variable as False to see if the letter guessed exists at all in the word
+        letterInWord = False
+        #creates a list for the blanks in the words
+        wordList = []
+        #sets the wrong guesses variable
+        wrongGuesses = 0
+        #list of possible words to guess
+        possibleWords = ["salem", "nymph", "boston", "stocks", "pentagram", "occult", "devil", "witchcraft", "rituals"]
+        #picks a random number for list
+        word = random.randint(0,8)
+        wordToGuess = (possibleWords[word])
         font = loadFont("Courier-55.vlw")
         textFont(font)
         fill(255)
-        text("_", 300, 300)
+        for x in wordToGuess:
+            text("_", 200, 300)
         
 #def keyPressed():
  #   if (key ==  ENTER):
