@@ -55,9 +55,4 @@ def draw():
 
 #sets the story
 
-print("I am a man from the 1600s being wrongfully accused of witchcraft.")
-print("I am counting on you to set me free.")
-print("There are six villainous people out there determined to slander my good name.")
-print("Thereby providing you with six rare opportunities to defend me.")
-print("For each person you fail to defend me from, I lose a chance at life.")
         
