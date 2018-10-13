@@ -35,8 +35,12 @@ def draw():
         font = loadFont("Courier-55.vlw")
         textFont(font)
         fill(255)
+        space = 200
         for x in wordToGuess:
-            text("_", 200, 300)
+            text("_", space, 300)
+            
+            print("1")
+            delay(10)
         
 #def keyPressed():
  #   if (key ==  ENTER):
